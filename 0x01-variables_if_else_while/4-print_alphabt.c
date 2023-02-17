@@ -8,10 +8,6 @@
 int main(void)
 {char c = 'a';
 while (c <= 'z')
-{putchar(c);
-c++;
-}
-c = 'a';
 if (c != 'q' && c != 'e')
 {putchar(c);
 c++;
