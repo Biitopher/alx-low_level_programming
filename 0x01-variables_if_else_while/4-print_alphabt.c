@@ -8,8 +8,9 @@
 int main(void)
 {char c = 'a';
 while (c <= 'z')
-if (c != 'q' && c != 'e')
+{if (c != 'e' && c != 'q')
 {putchar(c);
+}
 c++;
 }
 putchar('\n');
