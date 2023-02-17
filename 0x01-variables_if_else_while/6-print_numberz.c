@@ -1,6 +1,4 @@
 include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 /**
 * main - main block
 * Description: prints all single digit number of base 10
@@ -8,9 +6,9 @@ include <stdio.h>
 * Return: 0
 */
 int main(void)
-{char c = '0';
-while (c <= '9')
-{putchar(c);
+{int c = 0;
+while (c < 10)
+{putchar(48 +c c);
 c++;
 }
 putchar('\n');
