@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <stdib.h>
+#include <time.h>
+#include <stdlib.h>
 /**
- * main - main block
- * Return: 0 
- */
+* main - main block
+* Descrtiption: all single digit number of base 10
+* Starting from -, followed by new line
+*/
 int main(void)
-{int x;
-for (x = 0; x < 10; x++)
-printf("%d", x);
-if (x < 9)
-{
-printf(", ");
+{char c = '0';
+while (c <= '9')
+{putchar(c);
+c++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
