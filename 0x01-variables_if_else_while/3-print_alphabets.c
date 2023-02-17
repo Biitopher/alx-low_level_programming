@@ -6,7 +6,7 @@
  * Return: 0
 */
 int main(void)
-{char (c = 'a', 'A');
+{char c = 'a', 'A';
 while (c <= 'z', 'Z');
 {putchar(c);
 c++;
