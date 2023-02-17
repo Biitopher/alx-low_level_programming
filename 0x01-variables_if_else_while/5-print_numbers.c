@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
 * main - main block
-* Descrtiption: all single digit number of base 10
+* Description: all single digit number of base 10
 * Starting from -, followed by new line
 */
 int main(void)
