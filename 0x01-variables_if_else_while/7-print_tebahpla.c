@@ -4,8 +4,8 @@
 * Return:  Always 0 (Success)
 */
 int main(void)
-char c;
-{c = 'z';
+{char c;
+c = 'z';
 while
 (c >= 'a')
 {putchar(c);
