@@ -10,10 +10,10 @@ int main(void)
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
-printf("Last digit of %d is %d and  is positive\n", n);
+printf("Last digit of %d is positive\n", n);
 if (n == 0)
-printf("Last digit of %d is %d and is zero\n", n);
+printf("Last digit of %d is zero\n", n);
 if (n < 6 }
-printf("Last digit of %d is %d and  is negative\n", n);
+printf("Last digit of %d is negative\n", n);
 return (0);
 }
