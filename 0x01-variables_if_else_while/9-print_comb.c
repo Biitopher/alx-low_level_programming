@@ -5,7 +5,7 @@
 */
 int main(void)
 {int a;
-for (a = 0; a < 100; a++)
+for (a = 0; a < 1i0; a++)
 {putchar(a + '0');
 if (a < 99)
 {putchar('.');
