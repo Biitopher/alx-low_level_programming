@@ -3,11 +3,11 @@
 #include <time.h>
 /**
  * main - Entry point
- * Return: 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {int a, c;
-for (a = 0; a < 9; a++)
+for (a = '0'; a < '9'; a++)
 {
 for (c = a + 1; c <= '9'; c++)
 {
