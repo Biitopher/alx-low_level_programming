@@ -7,7 +7,7 @@
  */
 int main(void)
 {int a, c;
-for (a = 0; a < 98; a++)
+for (a = 0; a <= 98; a++)
 {
 for (c = a + 1; c <= 99; c++)
 {
