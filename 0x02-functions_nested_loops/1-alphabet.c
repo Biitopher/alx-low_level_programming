@@ -5,11 +5,6 @@
 */
 int main(void)
 {
-print_alphabet('a', 'z');
-{
-putchar(',');
-putchar(' ');
-}
-putchar('\n')
+print_alphabet();
 return (0);
 }
