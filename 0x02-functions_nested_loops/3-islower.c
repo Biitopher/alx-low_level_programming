@@ -2,15 +2,11 @@
 #include "main.h"
 /**
  * Checks for lowercase characters
- * Return: 1
+ * Return: returns 1 and 0 depending on condition
  */
 int _islower(int c)
 {
-int main(void)
-if (c = 'a')
-{
-else if (c = 'A')
+return (c >= 'a' && c <= 'z');
 }
 putchar('\n');
-return (0);
 }
