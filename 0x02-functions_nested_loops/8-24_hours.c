@@ -31,7 +31,7 @@ _putchar(':');
 _putchar((e / 10) + '0');
 _putchar((e % 10) + '0');
 }
-_putchar('\n')
+_putchar('\n');
 }
 }
 }
