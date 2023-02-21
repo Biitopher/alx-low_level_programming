@@ -19,6 +19,6 @@ while (n < 98)
 printf("%d, ", n++);
 printf("%d\n", n);
 putchar('\n');
-return (0)
+return (0);
 }
 
