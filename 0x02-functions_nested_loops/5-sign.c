@@ -2,10 +2,21 @@
 #include "main.h"
 /**
 * print_sign -> sign of a number
-* @c: a character arguement
+* @n: a character arguement
 * Return: returns 1 , 0 and -1 depending on condition
 */
 int print_sign(int n)
 {
-return ((n > 0) || (n = 0) || (n < 0));
+if (n > 0)
+{_putchar('+');
+return (1);
+}
+else if
+{_putchar(n == 0);
+return (0);
+}
+else 
+{_putchar ('-');
+return (-1);
+}
 }
