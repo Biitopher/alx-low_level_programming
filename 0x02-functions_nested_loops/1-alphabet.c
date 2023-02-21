@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - check the code
- * Description -  print_alphabet -> print the  lowercase alphabets
- * Return: Always 0.
-*/
+ * print_alphabet -> print the  lowercase alphabets
+ */
 void print_alphabet(void)
 {
 int c;
