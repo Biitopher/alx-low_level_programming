@@ -25,12 +25,13 @@ _putchar(':');
 _putchar('0');
 _putchar(e + '0');
 }
-else if (e > 10)
+else if (e >= 10)
 {
 _putchar(':');
 _putchar((e / 10) + '0');
 _putchar((e % 10) + '0');
 }
+_putchar('\n')
 }
 }
 }
