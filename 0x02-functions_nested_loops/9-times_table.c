@@ -12,14 +12,14 @@ _putchar('0');
 for (y = 1; y <= 9; y++)
 {
 _putchar(',');
--putchar(' ');
+_putchar(' ');
 z = x + y;
 if (z <= 9)
--putchar(' ');
+_putchar(' ');
 else
 _putchar((z / 10) + '0');
-_putchar(( z % 10) + '0');
+_putchar((z % 10) + '0');
 }
-putchar('\n')
+putchar('\n');
 }
 }
