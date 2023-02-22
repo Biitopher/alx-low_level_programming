@@ -5,7 +5,6 @@
 */
 void print_times_table(int n)
 {
-	int n;
 	if (n > 15)
 	{printf("%d", n);
 	printf("\n");
