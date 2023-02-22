@@ -11,7 +11,7 @@ int x;
 if (n < 0)
 n = -n;
 {
-else if (n > 0)
+for (n > 0)
 n = +n;
 }
 x = n % 10;
