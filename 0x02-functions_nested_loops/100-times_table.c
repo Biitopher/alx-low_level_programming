@@ -6,7 +6,9 @@
 */
 void print_times_table(int n)
 {
-	if (n > 15)
+	if
+	       	(n > 15)
+			for (n = 0; n > 15; n++)
 	{printf("%d", n);
 	printf("\n");
 	{
@@ -14,6 +16,7 @@ void print_times_table(int n)
 		putchar(' ');
 	}
 	if (n < 0)
+for (n = 0; n < 0; n--)
 		printf("%d", n);
 	printf("\n");
 }
