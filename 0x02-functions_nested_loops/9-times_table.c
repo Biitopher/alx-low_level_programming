@@ -19,6 +19,5 @@ _putchar(' ');
 else
 _putchar((z / 10) + '0');
 }
-putchar('\n');
 }
 }
