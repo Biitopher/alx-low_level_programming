@@ -19,7 +19,7 @@ break;
 }
 else
 {
-printf("%d, "' n);
+printf("%d, ", n);
 }
 for (; n >= 98; n--)
 {
