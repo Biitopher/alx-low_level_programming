@@ -6,19 +6,23 @@
 */
 void print_times_table(int n)
 {
-if
-(n > 15)
-for (n = 0; n > 15; n++)
+int x, y, z;
+for (x = 0; x <= 15; x++)
 {
-printf("%d", n);
-printf("\n");
+_putchar('0');
+for (y = 1; y <= 15; y++)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
+z = x * y;
+if (z <= 15)
+_putchar(' ');
+else
+_putchar((z / 10) + '0');
+_putchar((z % 10) + '0');
 }
-if (n < 0)
-for (n = 0; n < 0; n--)
-printf("%d", n);
-printf("\n");
+{
+_putchar('\n');
+}
 }
 }
