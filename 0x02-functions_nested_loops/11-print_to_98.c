@@ -24,8 +24,6 @@ printf("%d, ", n);
 }
 }
 {
-else if
-}
 for (; n >= 98; n--)
 {
 if (n == 98)
