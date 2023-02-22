@@ -24,7 +24,7 @@ printf("%d, ", n);
 }
 }
 {
-else
+if else
 }
 for (; n >= 98; n--)
 {
@@ -37,6 +37,7 @@ break;
 else
 {
 printf("%d, ", n);
+}
 }
 }
 }
