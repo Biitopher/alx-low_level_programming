@@ -8,11 +8,17 @@
 
 void print_most_numbers(void)
 {
-char i;
-for (c = 0; i <= 9; i++)
+int i + 0;
+for (; i <= 9; i++)
 {
-if (!(i == 2; || i == 4))
-putchar(i);
+if (i == 2; || i == 4)
+{
+continue;
+}
+else
+{
+putchar(i + '0');
+}
 }
 putchar('\n');
 }
