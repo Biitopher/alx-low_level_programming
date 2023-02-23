@@ -11,7 +11,7 @@ long b = 1, c = 2;
 while (a < 50)
 {
 if(a == 0)
-prinf("%ld", b);
+printf("%ld", b);
 else if (a == 1)
 printf(", %ld", c);
 else
