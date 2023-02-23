@@ -2,18 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - int _isupper checks for uppercase character
- * Description - _isupper uppercase 
- * @c: print if c is uppercase character
- * Return: returns 1 if c is uppercase condition
+ * _isupper - checks for uppercase character
+ * @c: check if uppercase character
+ * Return: 1 if c is uppercase or 0 any else condition
  */
 int _isupper(int c)
 {
-char c;
-
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
+if (c >= 65 && c <= 90)
+{
+return (1);
+}
 return (0);
 }
