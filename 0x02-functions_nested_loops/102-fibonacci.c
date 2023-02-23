@@ -2,7 +2,7 @@
 #include "main.h"
 /*
  * main - prints the first 50 Fibonacci numbers
- * Return: 0 (success)
+ * Return: Nothing
  */
 int main(void)
 {
@@ -10,7 +10,7 @@ int a = 0;
 long b = 1, c = 2;
 while (a < 50)
 {
-if(a == 0)
+if (a == 0)
 printf("%ld", b);
 else if (a == 1)
 printf(", %ld", c);
