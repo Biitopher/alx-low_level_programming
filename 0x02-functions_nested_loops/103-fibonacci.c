@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *main - the first 10 terms 
- *Return: Always 
+* main - the first 10 terms 
+* Return: Always
 */
 int main(void)
 {
