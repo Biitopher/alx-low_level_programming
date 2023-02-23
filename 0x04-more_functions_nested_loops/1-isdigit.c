@@ -1,8 +1,9 @@
 #include "main.h"
 #include <studio.h"
 
-/** -isdigi - checks for a digit
- * @c: checks if it is a digit 
+/**
+ * -isdigit - checks for a digit
+ * @c: checks if it is a digit
  * Return: return 1 if character is a digit and 0 if else
 */
 
