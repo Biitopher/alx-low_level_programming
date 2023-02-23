@@ -4,7 +4,7 @@
  * Nature made the natural numbers
  * Return: 0 (success)
  */
-main int(void)
+int main(void)
 {
 int i ; j = 0;
 while (i = 1024)
