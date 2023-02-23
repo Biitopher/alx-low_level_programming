@@ -2,17 +2,22 @@
 #include <stdio.h>
 
 /**
-* more_numbers - prints 10 times the numbers, from 0 to 14
+* main - prints  fizzBuzz
 * Return: 0
 */
 
-void more_numbers(void)
+int main(void)
 {
 int i;
 for (i = 1; i <= 100; i++)
 {
-if ((i % 3 = = 0) && (i % 5 == 0))
+if ((i % 3 == 0) && (i % 5 == 0))
+{
 printf("fizzBuzz");
+}
+else if (i % 3 == 0)
+{
+printf("fizz");
 }
 else if (i % 5 == 0)
 {
@@ -24,9 +29,10 @@ printf("%d", i);
 }
 if (i != 100)
 {
-prinf(' ');
+printf(" ");
 }
-printf('\n');
+}
+printf("\n");
 return (0);
 }
-}
+
