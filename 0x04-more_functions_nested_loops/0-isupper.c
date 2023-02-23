@@ -3,6 +3,7 @@
 
 /**
  * main - int _isupper checks for uppercase character
+ * Description - _isupper uppercase 
  * @c: print if c is uppercase character
  * Return: returns 1 if c is uppercase condition
  */
