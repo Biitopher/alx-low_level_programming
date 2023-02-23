@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* main - the first 10 terms 
+* main - The first 10 terms
 * Return: Always
 */
 int main(void)
