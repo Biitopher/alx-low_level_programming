@@ -2,8 +2,7 @@
 #include "main.h"
 /*
  * main - Prints the first 50 Fibonacci numbers
- * Return: Always
- *
+ * Return: nothing
 */
 int main(void)
 {
