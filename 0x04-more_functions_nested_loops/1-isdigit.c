@@ -2,9 +2,9 @@
 #include <studio.h"
 
 /**
- * -isdigit - checks for a digit
- * @c: checks if it is a digit
- * Return: return 1 if character is a digit and 0 if else
+* _isdigit - checks for a digit
+* @c: checks if it is a digit
+* Return: return 1 if character is a digit and 0 if else
 */
 
 int _isdigit(int c)
