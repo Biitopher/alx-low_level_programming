@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-* print_numbers - function that prints the numbers, from 0 to 9
-* Return: Always 0
+* print_numbers -  prints the numbers, from 0 to 9
+* Return: return numbers 0 upto 9
 */
 
 void print_numbers(void)
@@ -13,5 +13,5 @@ for (i = 0; i <= 9; i++)
 {
 _putchar(i + '0');
 }
-_putchar("\n");
+_putchar('\n');
 }
