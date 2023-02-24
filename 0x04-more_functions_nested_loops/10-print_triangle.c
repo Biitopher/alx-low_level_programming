@@ -18,7 +18,7 @@ else
 {
 for (c = 0; c < size; c++)
 {
-for (d = size -c; d > 1; d--)
+for (d = size - c; d > 1; d--)
 {
 putchar(32);
 }
