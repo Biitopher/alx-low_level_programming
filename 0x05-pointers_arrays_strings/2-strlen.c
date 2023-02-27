@@ -9,12 +9,10 @@
 
 int _strlen(char *s)
 {
-int leni = 0;
-while
-(*s != '\0');
-{
-leni++;
-s++;
-}
-return (leni);
+char *s
+int len;
+str = "first srtlen!";
+len = strlen(str);
+printf("%d\n", len);
+return (0);
 }
