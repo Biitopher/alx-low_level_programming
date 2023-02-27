@@ -10,11 +10,8 @@
 
 void swap_int(int *a, int *b)
 {
-int a = 5;
-int b = 10;
-printf("%d", a);
-printf("%d", b);
-swap(a, b);
-printf("\n a = %d, b = %d", a, b);
-return (0);
+int x;
+x = *a;
+*a = *b;
+*b = x;
 }
