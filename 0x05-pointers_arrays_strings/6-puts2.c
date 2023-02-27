@@ -8,16 +8,12 @@
 
 void puts2(char *str)
 {
-int c;
-int d = 0;
-while (str[d] != '\0')
-{
-d++;
-}
-for
-(c = 0; c < d; c += 2)
-{
-putchar(str[c]);
+int a = 0;
+for (; str[a] != '\0'; a++)
+if ((a % 2) == 0)
+putchar(str[a]);
+else
+continue;
 }
 putchar('\n');
 }
