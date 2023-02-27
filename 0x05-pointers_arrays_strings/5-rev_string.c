@@ -10,7 +10,7 @@ char rv = s[0];
 int a = 0;
 int b;
 while (s[a] != '\0')
-c++;
+a++;
 for
 (b = 0; b < a; b++)
 {
