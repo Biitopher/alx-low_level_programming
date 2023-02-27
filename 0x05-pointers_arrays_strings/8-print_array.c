@@ -13,6 +13,8 @@ void print_array(int *a, int n)
 int array[10];
 int n;
 for (n = 0; n < 10; n++)
-putchar("%d", (array[n]));
-putchar('\n');
+{
+printf("%d", (array[n]));
+}
+printf('\n');
 }
