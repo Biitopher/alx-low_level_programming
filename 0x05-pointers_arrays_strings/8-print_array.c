@@ -17,5 +17,5 @@ printf("%d", (a[d]));
 if (d !=n - 1)
 printf(",");
 }
-printf('\n');
+printf("\n");
 }
