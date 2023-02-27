@@ -3,15 +3,15 @@
 
 /**
  * _puts - function that prints a string, followed by a new line
- * @*str: stdout string
+ * @str: stdout string
  * Return: Always 0.
  */
 void _puts(char *str)
 {
-char = *str;
-str = "first stdout string to print"
+for
+(; *str != '\0'; str++)
 {
-_puts(str);
+_putchar(*str);
 }
-return (0);
+_putchar('\n');
 }
