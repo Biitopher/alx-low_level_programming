@@ -12,8 +12,9 @@ int b;
 while (s[a] != '\0')
 a++;
 for
-(b = 0; b < a;)
-(b++);
+(b = 0)
+for	
+(b < a; b++);
 {
 a--;
 rv = s[b];
