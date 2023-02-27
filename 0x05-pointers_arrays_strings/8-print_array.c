@@ -3,7 +3,7 @@
 
 /**
  * print_array - function that prints n elements of an array of integers
- *@array: prints elements
+ *@a: prints elements
  *@n: array of imtegers
  *Return: 0
 */
@@ -14,7 +14,7 @@ int d;
 for (d = 0; d < n; d++)
 {
 printf("%d", (a[d]));
-if (d !=n - 1)
+if (d != n - 1)
 printf(",");
 }
 printf("\n");
