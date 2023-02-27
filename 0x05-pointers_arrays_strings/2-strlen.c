@@ -9,10 +9,9 @@
 
 int _strlen(char *s)
 {
-char *s
-int len;
-str = "first srtlen!";
-len = strlen(str);
-printf("%d\n", len);
-return (0);
+int len = 0;
+while 
+(*s++);
+len++;
+return (len);
 }
