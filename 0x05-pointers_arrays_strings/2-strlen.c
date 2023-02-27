@@ -7,11 +7,11 @@
  *Return: Always 0
 */
 
-size_t _strlen(const char *s)
+int _strlen(char *s)
 {
-size_t len = 0;
+int length = 0;
 while
 (*s++);
-len++;
-return (len);
+length++;
+return (length);
 }
