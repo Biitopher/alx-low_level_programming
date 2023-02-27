@@ -14,7 +14,7 @@ while
 (*s != '\n');
 {
 len++;
-s++
+s++;
 }
 return (len);
 }
