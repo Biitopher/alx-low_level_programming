@@ -20,5 +20,5 @@ return (s1[c] = s2[c]);
 }
 c++;
 }
-return 0;
+return (0);
 }
