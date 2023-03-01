@@ -18,5 +18,4 @@ temp = a[i];
 a[i] = a[n];
 a[n] = temp;
 }
-return (0);
 }
