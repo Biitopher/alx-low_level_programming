@@ -5,25 +5,17 @@
  * _strncat - function that concatenates two strings
  * @dest: destination
  * @src: source
- * Return: o
+ * Return: 0
 */
 
 char *_strncat(char *dest, char *src, int n)
 {
-int a;
-int b;
-int n;
-a = 0;
+int a = 0, b;
 while (dest[a] != '\0')
 {
 a++;
-}
-b = 0;
-while (src[b] != '\0')
-{
-a++;
-b++;
-}
-n = '\0';
-return 0;
-}
+for (a = 0; a < n && src[b] != '\0'; a++)
+       dest[b + a] = src[b];
+dest[b + a] = '\0';
+return dest;
+} 
