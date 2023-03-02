@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- *letter - function that encodes a string into1337
+ *leet - function that encodes a string into1337
  *@n: parameter
  *Return: string
  */
 
-char *letter(char *n)
+char *leet(char *n)
 {
 int a = 0, b, l = 5;
 char tr[5] = {'A', 'E', 'O', 'T', 'L'};
