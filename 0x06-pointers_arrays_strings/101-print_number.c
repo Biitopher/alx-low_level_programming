@@ -8,12 +8,11 @@
 
 void print_number(int n)
 {
-unsigned int n1;
-n1 = n;
+unsigned int n1 = n;
 if (n < 0)
 {
 putchar('-');
-n1 = -n;
+n1 = -n1;
 }
 if ((n1 / 10) > 0)
 {
