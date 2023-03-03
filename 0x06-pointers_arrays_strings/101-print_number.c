@@ -4,13 +4,13 @@
 /**
  *print_number - function that prints an integer
  *@n: integer parameter
- *@n1: number
  * Return: 0
  */
 
 void print_number(int n)
 {
-unsigned int n1 = n;
+unsigned int n1;
+n1 = n;
 if (n < 0)
 {
 putchar('-');
