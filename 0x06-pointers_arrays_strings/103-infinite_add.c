@@ -7,7 +7,8 @@
  * @n2: number two
  * @r: buffer
  * @size_r: buffer size
- * Return: if r can store sum - a pointer to result.If r cannot store the sum - 0
+ * Return: if r can store sum - a pointer to result.
+ * If r cannot store the sum - 0
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
