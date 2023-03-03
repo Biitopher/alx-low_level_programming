@@ -16,11 +16,12 @@ if (size <= 0)
 {
 printf("\n");
 return;
+}
 while (a < size)
 {
 d = size - a < 10 ? size - a : 10;
 printf("%08x: ", a);
-for (e = 0; c < 10; e++)
+for (e = 0; e < 10; e++)
 {
 if (e < d)
 printf("%02x", *(b + a + e));
@@ -31,16 +32,16 @@ if (e % 2)
 printf(" ");
 }
 }
-for (e = 0; e < d; c++)
+for (e = 0; e < d; e++)
 {
 int c = *(b + a + e);
 if (c < 32 || c > 132)
 {
 c = '.';
 }
-printf("%0", c);
+printf("%c", c);
 }
 printf("\n");
-o += 10;
+a += 10;
 }
 }
