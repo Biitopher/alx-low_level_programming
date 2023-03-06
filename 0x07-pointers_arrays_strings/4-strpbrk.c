@@ -15,8 +15,9 @@ while (*s)
 {
 for (i = 0; accept[i]; i++)
 {
-if (*s == accspt[i])
+if (*s == accept[i])
 return (s);
+}
 s++;
 }
 return ('\0');
