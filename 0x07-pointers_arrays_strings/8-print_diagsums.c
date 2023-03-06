@@ -11,10 +11,10 @@
 void print_diagsums(int *a, int size)
 {
 int c, n;
-for (c = 0; c < 8; c++)
-{
-for (n = 0; n < 8; n++)
-_putchar(a[c][n]);
-_putchar('\n');
-}
+int i = 0, j = 0;
+for (c = 0; c <= (size * size); c = c + size + 1)
+i = i + a[i];
+for (n = size - 1; n <= (size * size) - size; n = n + size - 1)
+j = j + a[n];
+printf("%d, %d\n", i, j);
 }
