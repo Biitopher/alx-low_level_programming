@@ -5,7 +5,7 @@
  * _strstr - function that locates a substring
  * @haystack: first occurence in string
  * @needle: first occurence in substring
- * Return: o success or null if not found
+ * Return: 0 success or null if not found
  */
 
 char *_strstr(char *haystack, char *needle)
@@ -22,5 +22,5 @@ k++;
 if (k == '\0')
 return (haystack);
 }
-return (null);
+return (0);
 }
