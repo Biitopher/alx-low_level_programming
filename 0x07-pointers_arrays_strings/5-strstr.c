@@ -20,7 +20,7 @@ i++;
 k++;
 }
 if (k == '\0')
-return (*haystack);
+return (haystack);
 }
-return (0);
+return (null);
 }
