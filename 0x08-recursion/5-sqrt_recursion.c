@@ -8,5 +8,11 @@
 
 int _sqrt_recursion(int n)
 {
-return (_sqrt(n, 1));
+int a;
+int sqrt = a * a;
+if (sqrt > n)
+return (-1);
+if (sqrt == n)
+return (a);
+return (_sqrt(n, a + 1));
 }
