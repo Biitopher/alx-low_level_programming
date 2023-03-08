@@ -9,10 +9,8 @@
 int _sqrt_recursion(int n)
 {
 int a;
-sqrt = a * a;
-if (sqrt > n)
-return (-1);
-if (sqrt == n)
-return (a);
-return (_sqrt_recursion(n, a + 1));
-}
+if (n != '\0')
+return (a = 1 + _sqrt_recursion(n + 1));
+else
+return (0);
+
