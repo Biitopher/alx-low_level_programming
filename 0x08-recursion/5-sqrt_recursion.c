@@ -9,10 +9,10 @@
 int _sqrt_recursion(int n)
 {
 int a;
-int sqrt = a * a;
+sqrt = a * a;
 if (sqrt > n)
 return (-1);
 if (sqrt == n)
 return (a);
-return (_sqrt(n, a + 1));
+return (_sqrt_recursion(n, a + 1));
 }
