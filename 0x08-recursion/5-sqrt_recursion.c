@@ -9,7 +9,9 @@ int _sqrt(int n, int i);
  * Return: natural square root 
  */
 int _sqrt_recursion(int n)
+{
 return (_sqrt(n, 1));
+}
 
 /**
  * _sqrt - calculates natural square root
