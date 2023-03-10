@@ -20,7 +20,7 @@ return (1);
 }
 i = _atoi(argv[1]);
 j = _atoi(argv[2]);
-len = i * j;
+len = i *j;
 printf("%d\n", len);
 return (0);
 }
