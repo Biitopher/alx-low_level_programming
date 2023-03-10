@@ -5,17 +5,21 @@
  * main - program that multiplies two numbers
  * @argc: number of arguments
  * @argv: array argument
- * Return: 0 success
+ * Return: 0 success, 1 error
+ *
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-int len = argc - 1;
-if (len != 2)
+int len, i, j;
+if (argc < 3 || argc > 3)
 {
-puts("error");
+printf("Error\n");
 return (1);
 }
-printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+i =  _atoi(argv[1]);
+j =  _atoi(argv[2]);
+len = i *j;
+printf("%d\n", len);
 return (0);
 }
