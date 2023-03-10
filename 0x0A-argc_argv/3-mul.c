@@ -6,6 +6,7 @@
  * main - program that multiplies two numbers
  * @argc: number of arguments
  * @argv: array argument
+ * _atoi - converts a string to an integer
  * Return: 0 success, 1 Error if not
  *
  */
