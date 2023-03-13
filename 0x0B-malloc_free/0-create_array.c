@@ -16,7 +16,7 @@ unsigned int i;
 str = malloc(sizeof(char) * size);
 if (size == 0 || str == NULL)
 return (NULL);
-if (i < size, i++)
+if (i < size; i++)
 str[i] = c;
 return (str);
 }
