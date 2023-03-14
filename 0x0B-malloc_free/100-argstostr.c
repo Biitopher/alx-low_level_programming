@@ -17,7 +17,7 @@ if (ac == 0 || av == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
 {
-for (a = 0; av[i][a]; a++)
+for (a = 0; av[i][a] != '\0'; a++)
 e++;
 }
 e += ac;
@@ -26,14 +26,14 @@ if (str == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
 {
-for (a = 0; av[i][a]; a++)
+for (a = 0; av[i][a] != '\0'; a++)
 {
 str[d] = av[i][a];
 d++;
 }
 if (str[d] == '\0')
 {
-str[d++] = '\a';
+str[d++] = '\n';
 }
 }
 return (str);
