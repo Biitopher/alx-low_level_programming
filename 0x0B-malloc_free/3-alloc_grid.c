@@ -29,7 +29,7 @@ free(g[w]);
 free(g);
 return (NULL);
 }
-}
+{
 for (h = 0; h < width; h++)
 g[w][h] = 0;
 }
