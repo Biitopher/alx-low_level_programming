@@ -8,7 +8,7 @@
  * Return: 0 success
  */
 
-int count_word(char *s)	
+int count_word(char *s)
 {
 int flag, y, d;
 flag = 0;
