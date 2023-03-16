@@ -24,5 +24,5 @@ p[c] = min;
 c++;
 min++;
 }
-return (0);
+return (p);
 }
