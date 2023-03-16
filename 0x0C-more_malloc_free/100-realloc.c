@@ -7,7 +7,7 @@
  * @ptr: pointer
  * @old_size: previous array size
  * @new_size: current new size
- * Return: 0 success, null if fails
+ * Return: nothing
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -38,5 +38,6 @@ if (new_size > old_size)
 for (i = 0; i < old_size; i++)
 a[i] = b[i];
 }
+free(ptr);
+return (a);
 }
-
