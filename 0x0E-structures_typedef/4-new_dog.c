@@ -19,13 +19,13 @@ return (a);
 }
 
  /**
- * *_strcpy - copies the string
+ * _strncpy - copies the string
  * @dest: destination of string
- * @strcpy: string copy
+ * @strncpy: string copy
  * @src: source of string
  * Return: to dest
  */
-char *_strcpy(char *dest, char *src)
+char *_strncpy(char *dest, char *src)
 {
 int len, a;
 len = 0;
@@ -46,7 +46,6 @@ return (dest);
 * @name: first element
 * @age: second element
 * @owner: third element
-*
 * Return: new dog success, null if not
 */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -71,8 +70,8 @@ free(dog);
 free(dog->name);
 return (NULL);
 }
-_strcpy(dog->name, name);
-_strcpy(dog->owner, owner);
+_strncpy(dog->name, name);
+_strncpy(dog->owner, owner);
 dog->age = age;
 return (dog);
 }
