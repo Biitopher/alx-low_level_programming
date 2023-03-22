@@ -24,12 +24,15 @@ if (bytes < 0)
 printf("Error\n");
 exit(2);
 }
-a = (char *)main;
+a = (char *);
 for (i = 0; i < bytes; i++)
 {
 if (i == bytes - 1)
 {
-printf("%.2hhx\n", a[i]);
+printf("%02hhx\n", a[i]);
+break;
+}
+printf("%02hhx", a[i]);
 }
 return (0);
 }
