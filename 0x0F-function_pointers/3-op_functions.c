@@ -1,6 +1,6 @@
 #include "3-calc.h"
 
-/*
+/**
  * op_add - add elements
  * @a: first element
  * @b: second element
@@ -12,7 +12,7 @@ int op_add(int a, int b)
 return (a + b);
 }
 
-/*
+/**
  * op_sub - subtracts elements
  * @a: first element
  * @b: second element
@@ -24,7 +24,7 @@ int op_sub(int a, int b)
 return (a - b);
 }
 
-/*
+/**
  * op_mul - multiplies elements
  * @a: first element
  * @b: second element
@@ -36,7 +36,7 @@ int op_mul(int a, int b)
 return (a * b);
 }
 
-/*
+/**
  * op_div - divides elements
  * @a: first element
  * @b: second element
@@ -48,7 +48,7 @@ int op_div(int a, int b)
 return (a / b);
 }
 
-/*
+/**
  * op_mod - remainder of the division of elements
  * @a: first element
  * @b: second element
