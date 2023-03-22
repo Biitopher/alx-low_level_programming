@@ -10,13 +10,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-int i;
-if (name)
-{
-for (i = 0; name[i]; i++)
-{
-f(&name[i]);
-}
-}
+if (name == NULL || f == NULL)
 return;
+f(name);
 }
