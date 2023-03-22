@@ -32,6 +32,7 @@ if (i == b - 1)
 printf("%02hhx\n", a[i]);
 }
 printf("%02hhx", a[i]);
+break;
 }
 return (0);
 }
