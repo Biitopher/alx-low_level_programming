@@ -24,7 +24,7 @@ if (bytes < 0)
 printf("Error\n");
 exit(2);
 }
-a = (char *argv)main;
+a = (char *)main;
 for (i = 0; i < bytes; i++)
 {
 if (i == bytes - 1)
