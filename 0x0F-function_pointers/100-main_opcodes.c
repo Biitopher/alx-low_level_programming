@@ -30,9 +30,6 @@ for (i = 0; i < bytes; i++)
 if (i == bytes - 1)
 {
 printf("%.2hhx\n", a[i]);
-break;
-}
-printf("%.2hhx", a[i]);
 }
 return (0);
 }
