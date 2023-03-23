@@ -11,11 +11,15 @@ int sum_them_all(const unsigned int n, ...)
 {
 va_list sum;
 int i;
+if (n == 0 || n == NULL)
+return (0);
+{
 va_start(sum, n);
 for (i = 0; i >= 0; i = va_n(sum, int))
 printf("%d", i);
 va_end(sum);
 putchar('\n');
+}
 return (0);
 }
 

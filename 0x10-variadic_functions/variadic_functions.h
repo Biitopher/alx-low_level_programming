@@ -1,5 +1,5 @@
-#ifndef VARIADIC_POINTERS.H
-#define VARIADIC_POINTERS.H
+#ifndef VARIADIC_POINTERS_H
+#define VARIADIC_POINTERS_H
 
 #include <stdio.h>
 
