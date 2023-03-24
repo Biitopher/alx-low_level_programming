@@ -7,7 +7,7 @@
  * @separator: string to be printed between numbers
  * @n: number of  strings passed to the function
  * @....: variables of strings to be printed
- * Return: null if string pring is nil
+ * Return: null if one string print is nil
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -28,5 +28,4 @@ printf("%s", separator);
 }
 printf("\n");
 va_end(ap);
-return;
 }
