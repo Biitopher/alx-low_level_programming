@@ -22,8 +22,8 @@ s = va_arg(ap, char *);
 if (s)
 printf("%s", s);
 else
-printf("nil");
-if (i < n - 1
+printf(("nil"));
+if (i < n - 1)
 if (separator)
 printf("%s", separator);
 }
