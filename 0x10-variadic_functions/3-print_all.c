@@ -16,7 +16,6 @@ va_list ap;
 char *s;
 const char t_arg[] = "cifs";
 va_start(ap, format);
-
 while (format && format[i])
 {
 a = 0;
@@ -24,9 +23,10 @@ while (t_arg[a])
 {
 if (format[i] == t_arg[a] && e)
 {
-printf(",");
+printf(", ");
 break;
 } a++;
+}
 switch (format[i])
 {
 case 'c':
@@ -49,6 +49,5 @@ printf("%s", s);
 break;
 } i++;
 }
-printf("n"), va_end(ap);
-}
+printf("\n"), va_end(ap);
 }
