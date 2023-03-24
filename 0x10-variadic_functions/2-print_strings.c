@@ -19,11 +19,11 @@ va_start(ap, n);
 for (i = 0; i < n; i++)
 {
 s = va_arg(ap, char *);
-if (s == NULL)
-printf("nil");
-else
+if (s)
 printf("%s", s);
-if (i != (n - 1) && separator != NULL)
+else
+printf("nil");
+if (i < (n - 1) && separator)
 printf("%s", separator);
 }
 printf("\n");
