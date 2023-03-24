@@ -22,19 +22,19 @@ while (format[i])
 switch (format[i])
 {
 case 'c':
-printf("%s%c", sep, va_arg(ap, int));
+printf("%c", sep, va_arg(ap, int));
 break;
 case 'i':
-printf("%s%d", sep, va_arg(ap, int));
+printf("%d", sep, va_arg(ap, int));
 break;
 case 'f':
-printf("%s%f", sep, va_arg(ap, double));
+printf("%f", sep, va_arg(ap, double));
 break;
 case 's':
 s = va_arg(ap, char *);
 if (!s)
 s = "(nil)";
-printf("%s%s", sep, s);
+printf("%s", sep, s);
 break;
 default:
 i++;
