@@ -11,39 +11,43 @@
 
 void print_all(const char * const format, ...)
 {
-int i = 0;
+unsigned int i = 0, a, e = 0;
 va_list ap;
-char *s, *sep = "";
+char *s;
+const char t_arg[] = "cifs";
 va_start(ap, format);
-if (format)
+
+while (format && format[i])
 {
-while (format[i])
+a = 0;
+while (t_arg[a])
 {
+if (format[i] == t_arg[a] && e)
+{
+printf(",");
+break;
+} a++;
 switch (format[i])
 {
 case 'c':
-printf("%c", sep, va_arg(ap, int));
+printf("%c", va_arg(ap, int)), e = 1;
 break;
 case 'i':
-printf("%d", sep, va_arg(ap, int));
+printf("%d", va_arg(ap, int)), e = 1;
 break;
 case 'f':
-printf("%f", sep, va_arg(ap, double));
+printf("%f", va_arg(ap, double)), e = 1;
 break;
 case 's':
-s = va_arg(ap, char *);
+s = va_arg(ap, char *), e = 1;
 if (!s)
-s = "(nil)";
-printf("%s", sep, s);
+{
+printf("(nil)");
 break;
-default:
-i++;
-continue;
 }
-sep = ",";
-i++;
+printf("%s", s);
+break;
+} i++;
 }
-}
-printf("n");
-va_end(ap);
+printf("n"), va_end(ap);
 }
