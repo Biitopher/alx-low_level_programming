@@ -21,8 +21,8 @@ return (a);
  /**
  * _strncpy - copies the string
  * @dest: destination of string
- * @strncpy: string copy
  * @src: source of string
+ * @strncpy: copy string
  * Return: to dest
  */
 char *_strncpy(char *dest, char *src)
