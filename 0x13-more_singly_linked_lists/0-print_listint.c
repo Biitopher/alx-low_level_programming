@@ -5,18 +5,18 @@
 
 /**
  * print_listint -  prints all the elements of a listint_t list
- * @h: pointer to struct
+ * @h: list to be printed
  * Return: nodes numbers
  */
 
 size_t print_listint(const listint_t *h)
 {
-listint_t = 0;
+size_t number = 0;
 while (h)
 {
 printf("%d\n", h->n);
-i++;
+number++;
 h = h->next;
 }
-return (i);
+return (number);
 }
