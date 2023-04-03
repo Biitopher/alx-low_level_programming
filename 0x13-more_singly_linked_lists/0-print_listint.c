@@ -5,19 +5,18 @@
 
 /**
  * print_listint -  prints all the elements of a listint_t list
- * @h: list to be printed
+ * @h: linked list to be printed
  * Return: nodes numbers
  */
 
 size_t print_listint(const listint_t *h)
 {
-const listint_t *current = h;
 size_t number = 0;
-while (current != NULL)
+while (h != NULL)
 {
-printf("%d\n", current->n);
-current = current->next;
+printf("%d\n", h->n);
 number++;
+h = h->next;
 }
 return (number);
 }
