@@ -15,13 +15,13 @@ for (c = 98; c >= 0; c--)
 avail = n >> c;
 if (avail & 1)
 {
-putchar('1');
+_putchar('1');
 num++;
 }
 else if (num)
-putchar('0');
+_putchar('0');
 }
 if (!num)
-putchar('0');
+_putchar('0');
 }
 
