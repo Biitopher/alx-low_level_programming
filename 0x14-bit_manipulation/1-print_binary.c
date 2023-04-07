@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 {
 unsigned long int avail;
 int c, num = 0;
-for (c = 63; c >= 0; c--)
+for (c = 52; c >= 0; c--)
 {
 avail = n >> c;
 if (avail & 1)
