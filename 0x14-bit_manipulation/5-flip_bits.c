@@ -11,7 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 unsigned long int avail, flip = n ^ m;
 int c, num = 0;
-for (c = 52; c >= 0; c--)
+for (c = 63; c >= 0; c--)
 {
 avail = flip >> c;
 if (avail & 1)
