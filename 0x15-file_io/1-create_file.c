@@ -18,7 +18,7 @@ if (text_content != NULL)
 for (len = 0; text_content[len];)
 len++;
 }
-fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 032);
+fd = open(filename, O_CREAT | O_RDWR | O_TRUNC);
 n = write(fd, text_content, len);
 if (fd == -1 || n == -1)
 return (-1);
