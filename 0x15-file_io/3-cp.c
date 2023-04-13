@@ -1,9 +1,41 @@
 #include "main.h"
 
 /**
- * main - prints the number of arguments passed into it
  * close_file - file closing description
+ * @fd: file to be closed
+ * Return: nothing
+ */
+
+void close_file(int fd)
+{
+int i;
+i = close(fd);
+if (i == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+exit(100);
+}
+}
+
+/**
  * create_buffer - allocate buffer 1024 bytes
+ * @f: file storing chars
+ * Return: pointer of allocated buff
+ */
+char *create_buffer(char *f)
+{
+char *buff;
+buff = malloc(sizeof(char) * 1024);
+if (buff == NULL)
+{
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f);
+}
+return (buff);
+}
+
+
+/**
+ * main - prints the number of arguments passed into it
  * @argv: array of arguments
  * @argc: number of arguments
  * Return: 0 success
@@ -43,39 +75,4 @@ free(buff);
 close_file(from);
 close_file(to);
 return (0);
-}
-
-
-/**
- * close_file - file closing description
- * @fd: file to be closed
- * Return: nothing
- */
-
-void close_file(int fd)
-{
-int i;
-i = close(fd);
-if (i == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-exit(100);
-}
-}
-
-/**
- * create_buffer - allocate buffer 1024 bytes
- * @f: file storing chars
- * Return: pointer of allocated buff
- */
-
-char *create_buffer(char *f)
-{
-char *buff;
-buff = malloc(sizeof(char) * 1024);
-if (buff == NULL)
-{
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f);
-}
-return (buff);
 }
