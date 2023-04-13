@@ -17,6 +17,7 @@ exit(100);
 }
 }
 
+
 /**
  * create_buffer - allocate buffer 1024 bytes
  * @f: file storing chars
