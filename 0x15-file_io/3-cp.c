@@ -1,4 +1,6 @@
 #include "main.h"
+#include <errno.h>
+
 
 /**
  * close_file - file closing description
@@ -49,7 +51,7 @@ int a, b, from, to;
 char *buff;
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n", argv[0]);
 exit(97);
 }
 buff = create_buffer(argv[2]);
