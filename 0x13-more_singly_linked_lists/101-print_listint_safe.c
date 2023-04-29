@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * looped_listint_len - cnumber of nodes in listint_t linked list
