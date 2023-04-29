@@ -48,6 +48,7 @@ return (0);
 size_t print_listint_safe(const listint_t *head)
 {
 size_t num, i = 0;
+int n;
 num = looped_listint_len(head);
 if (num == 0)
 {
