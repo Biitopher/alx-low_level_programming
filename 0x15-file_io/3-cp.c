@@ -51,7 +51,7 @@ int a, b, from, to;
 char *buff;
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to %s\n");
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
 buff = create_buffer(argv[2]);
@@ -62,20 +62,17 @@ do {
 if (from == -1 || a == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-free(buff);
 exit(98);
 }
 b = write(to, buff, a);
 if (to == -1 || b == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write %s\n", argv[2]);
-free(buff);
 exit(99);
 }
 a = read(from, buff, 1024);
 to = open(argv[2], O_WRONLY | O_APPEND);
 } while (a > 0);
-free(buff);
 close_file(from);
 close_file(to);
 return (0);
