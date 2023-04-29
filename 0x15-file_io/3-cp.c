@@ -67,7 +67,7 @@ exit(98);
 b = write(to, buff, a);
 if (to == -1 || b == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't write %s\n", argv[2]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 a = read(from, buff, 1024);
