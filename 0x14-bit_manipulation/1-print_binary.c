@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 
 	for (k = 63; k >= 0; k--)
 	{
-		avail == n >> k;
+		avail = n >> k;
 		if (avail & 1)
 		{
 		putchar('1');
