@@ -6,12 +6,14 @@
  *
  * Return: pointer to newly created shash table, else NULL
  */
+
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	unsigned long int x;
 	shash_table_t *table;
 
 	table = malloc(sizeof(shash_table_t));
+
 	if (table == NULL)
 	{
 		return (NULL);
@@ -26,8 +28,8 @@ shash_table_t *shash_table_create(unsigned long int size)
 	for (x = 0; x < size; x++)
 		table->array[x] = NULL;
 	table->shead = NULL;
-   table->stail = NULL;
-   return (table);
+	table->stail = NULL;
+	return (table);
 }
 
 /**
@@ -51,8 +53,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	if (copy_value == NULL)
 		return (0);
 	idx = key_index((const unsigned char *)key, ht->size);
-   table = ht->array[idx];
-
+	table = ht->array[idx];
 	while (table)
 	{
 		if (!strcmp(key, table->key))
@@ -146,22 +147,22 @@ void shash_table_print(const shash_table_t *ht)
 
 void shash_table_print_rev(const shash_table_t *ht)
 {
-        shash_node_t  *table;
-        int not_fin = 0;
+	shash_node_t  *table;
+	int not_fin = 0;
 
-        if (ht == NULL)
-                return;
-        table = ht->stail;
-        printf("{");
-        while (table)
-        {
-                if (not_fin)
-                        printf(", ");
-                printf("'%s': '%s'", table->key, table->value);
-                not_fin = 1;
-                table = table->next;
-        }
-        printf("}\n");
+	if (ht == NULL)
+		return;
+	table = ht->stail;
+	printf("{");
+	while (table)
+	{
+		if (not_fin)
+			printf(", ");
+		printf("'%s': '%s'", table->key, table->value);
+		not_fin = 1;
+		table = table->next;
+	}
+	printf("}\n");
 }
 
 
