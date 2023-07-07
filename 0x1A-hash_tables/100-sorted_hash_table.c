@@ -120,7 +120,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
-	unsigned long int idx = 0;
+	unsigned long int idx;
 	shash_node_t *new_node;
 
 	if (!ht || !key || !*key)
@@ -138,7 +138,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 
 
 /**
- * shash_table_print  - function that prints a shash table.
+ * shash_table_print  - function that prints a hash table.
  * @ht: shash table
  *
  * Return: value in array order, else NULL
@@ -205,17 +205,16 @@ void shash_table_delete(shash_table_t *ht)
 	shash_node_t *node, *temp;
 
 	if (ht == NULL)
-		{
-			node = ht->shead;
-			while (node)
-			{
-				temp = node->next;
-				free(node->key);
-				free(node->value);
-				free(node);
-				node = temp;
-			}
-		}
+		return;
+	node = ht->shead;
+	while (node)
+	{
+		temp = node->next;
+		free(node->key);
+		free(node->value);
+		free(node);
+		node = temp;
+	}
 	free(head->array);
 	free(head);
 }
