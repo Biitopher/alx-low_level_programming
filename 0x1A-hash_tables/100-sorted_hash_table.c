@@ -51,7 +51,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	copy_value = strdup(value);
 	if (copy_value == NULL)
 		return (0);
-	idx = key_idx((const unsigned char *)key, ht->size);
+	idx = key_index((const unsigned char *)key, ht->size);
 	temp = ht->shead;
 	while (temp)
 	{
