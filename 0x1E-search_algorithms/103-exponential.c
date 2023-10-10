@@ -1,14 +1,13 @@
 #include "search_algos.h"
 
 /**
- * exponential_search - Searches for a value in a sorted array using
- *                     the Exponential search algorithm.
+ * exponential_search - Searches for a value in a sorted array
  * @array: Pointer to the first element of the array to search in.
  * @size: Number of elements in the array.
- * @value: The value to search for.
- *
- * Return: The first index where the value is located, or -1 if not found.
+ * @value: value to search for.
+ * Return: first index where the value is located, or -1 if not found.
  */
+
 int exponential_search(int *array, size_t size, int value)
 {
 	int i;
