@@ -13,9 +13,8 @@ int *_advanced_binary(int *array, size_t size, int value)
 	size_t i;
 
 	if (array == NULL || size == 0)
-		return (-1);
-	for printf("Searching in array: ");
-	(i < size; i++)
+		return (NULL);
+	for (printf("Searching in array: "); i < size; i++)
 		printf("%d%s", array[i], i + 1 == size ? "\n" : ", ");
 
 	i = (size - 1) / 2;
