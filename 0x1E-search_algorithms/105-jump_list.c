@@ -20,11 +20,11 @@ listint_t *get_n_next(listint_t *node, size_t n)
 }
 
 /**
- * jump_list - Searches for a value in a sorted list of integers using Jump search.
+ * jump_list - Searches for value in sorted list of integers using Jump search.
  * @list: Pointer to the head of the list to search in.
  * @size: Number of nodes in the list.
  * @value: The value to search for.
- * Return: Pointer to the first node where the value is located, or NULL if not found.
+ * Return: Pointer to first node where value is located, or NULL if not found.
  */
 
 listint_t *jump_list(listint_t *list, size_t size, int value)
