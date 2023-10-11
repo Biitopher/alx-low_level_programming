@@ -12,7 +12,7 @@
  * Return: The first index where the value is located or -1 if not found.
  */
 
-int stepump_search(int *array, size_t size, int value)
+int jump_search(int *array, size_t size, int value)
 {
 	size_t i = 0;
 	size_t step = sqrt(size);
