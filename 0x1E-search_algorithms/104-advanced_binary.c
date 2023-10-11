@@ -10,12 +10,12 @@
 
 int *_advanced_binary(int *array, size_t size, int value)
 {
-	size_t i;
+	size_t i = 0;
 
 	if (array == NULL || size == 0)
 		return (NULL);
 	for (printf("Searching in array: "); i < size; i++)
-		rintf("%d%s", array[i], i + 1 == size ? "\n" : ", ");
+		printf("%d%s", array[i], i + 1 == size ? "\n" : ", ");
 
 	i = (size - 1) / 2;
 	if (array[i] == value)
