@@ -12,7 +12,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 	skiplist_t *current = list;
 
 	if (list == NULL)
-            return (NULL);
+		return (NULL);
 
 	while (list->n < value)
 	{
